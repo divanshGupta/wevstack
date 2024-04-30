@@ -1,0 +1,7 @@
+1. wrap all await into try catch block
+2. add custom error page 
+3. redesign the header, footer, hero, category, cards and pagination
+4. add google analytics
+5. add sitemap 
+6. add skeleton and suspense from next
+7. revamp the about section and write all the stacks used in devlopement 
