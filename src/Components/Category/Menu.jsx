@@ -27,13 +27,13 @@ export default function Menu({ categories }) {
         onClick={() => {
           router.push("/", { scroll: false });
         }}
-        className={`py-2 px-4 flex gap-x-1 font-medium items-center border border-dim-gray  rounded-xl hover:border-text transition-all text-sm xl:text-h6 ${
+        className={`py-2 px-4 flex gap-x-1 font-medium items-center border border-dim-gray  rounded-full hover:border-text transition-all text-sm xl:text-h6 ${
           activeCategory === "" ? "bg-accent text-bg" : "bg-bg text-accent"
         }`}
       >
         All
       </button>
-      <div className="flex gap-x-0 bg-dark-charcoal rounded-xl border border-outline border-opacity-15">
+      <div className="flex gap-x-2 bg-super-dark-gray">
         {Object.entries(categoryCount).map(([item, count]) => {
           return (
             <button
@@ -42,7 +42,7 @@ export default function Menu({ categories }) {
                 e.preventDefault();
                 router.push(`/?category=${item}`, { scroll: false });
               }}
-              className={`py-2 px-5 flex gap-x-1 font-medium  rounded-xl  transition-all relative ${
+              className={`py-2 px-5 flex gap-x-1 font-medium  rounded-full border border-dim-gray transition-all relative ${
                 activeCategory === item
                   ? ""
                   : "   hover:text-gray"
@@ -55,7 +55,7 @@ export default function Menu({ categories }) {
                     ease: [0.16, 1, 0.3, 1],
                   }}
                   layoutId="active"
-                  className=" absolute inset-0 bg-accent rounded-xl"
+                  className=" absolute inset-0 bg-accent rounded-full"
                 />
               )}
               <span

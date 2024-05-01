@@ -27,10 +27,10 @@ export default function MobileMenu({ categories }) {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white p-4 flex justify-center gap-x-2 gap-y-2 sm:hidden z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-white p-4 flex justify-center gap-x-2 gap-y-2 sm:hidden z-50 rounded-xl">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`py-4 px-4 flex gap-x-1 font-bold border bg-dark-charcoal border-dim-gray rounded-md hover:border-text transition-all text-sm items-center w-full justify-between ${
+        className={`py-4 px-4 flex gap-x-1 font-bold border bg-dark-charcoal border-dim-gray rounded-xl hover:border-text transition-all text-sm items-center w-full justify-between ${
           activeCategory === "" ? " text-accent" : ""
         }`}
       >
@@ -41,10 +41,10 @@ export default function MobileMenu({ categories }) {
       </button>
       {isOpen && (
         <div className="absolute bottom-16 left-0 right-0 border
-        border-dim-gray bg-dark-charcoal p-4 m-4 flex rounded-md flex-col gap-y-2 ">
+        border-dim-gray bg-dark-charcoal p-4 m-4 flex rounded-xl flex-col gap-y-2 ">
           <button
             onClick={() => handleCategoryChange("")}
-            className={`py-4 px-4 flex gap-x-1 font-medium rounded border border-transparent hover:border-dim-gray transition-all text-sm ${
+            className={`rounded-xl py-4 px-4 flex items-center justify-center gap-x-1 font-medium border border-transparent hover:border-dim-gray transition-all text-sm ${
               activeCategory === "" ? "bg-accent text-bg" : " bg-bg text-accent"
             }`}
           >
@@ -55,7 +55,7 @@ export default function MobileMenu({ categories }) {
               <button
                 key={item}
                 onClick={() => handleCategoryChange(item)}
-                className={`py-4 px-4 flex gap-x-1 font-medium  rounded border border-transparent hover:border-dim-gray transition-all text-sm relative ${
+                className={`py-4 px-4 flex gap-x-1 font-medium  rounded-xl border border-transparent hover:border-dim-gray transition-all text-sm relative ${
                   activeCategory === item
                     ? "text-bg bg-accent"
                     : " bg-bg text-accent"

@@ -15,20 +15,19 @@ export default async function Home({ searchParams }) {
   });
 
   return (
-    <main>
-      <section className="mx-auto flex flex-col items-center space-y-5 mt-20 mb-32">
-        <h1 className=" text-display max-w-[20ch] text-center text-accent">
-          Assorted resources{" "}
-          <span className=" text-light-gray">
-            for frontend developers and web designers.
+    <main className="bg-[222831]">
+      <section className="px-6 md:px-12 mx-auto flex flex-col items-center space-y-5 mt-10 mb-24">
+        <h1 className="leading-snug text-display max-w-[20ch] text-center text-[EEEEEE]">
+          Resources You Need {" "}
+            For Your
+            <span className=" text-light-gray"> Development And Design Project.
           </span>
         </h1>
         <p className="text-text mx-auto text-base text-center xl:text-h6 2xl:text-h5 pt-5 max-w-[50ch]">
-          Explore curated and handpicked goodies that enhance your workflow and
-          cultivate your growth as a developer and designer.
+          Navigate the web development landscape effortlessly with our curated collection of web dev resources.
         </p>
       </section>
-      <section>
+      <section className="px-6 md:px-12">
         <MobileMenu categories={categories} />
         <Menu categories={categories} />
           <ResourceContainer
@@ -36,7 +35,7 @@ export default async function Home({ searchParams }) {
             page={page}
             per_page={per_page}
           />
-          <Trending/>
+          {/* <Trending/> */}
       </section>
     </main>
   );

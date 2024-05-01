@@ -25,19 +25,16 @@ module.exports = {
     },
     colors: {
       'transparent': 'transparent',
-      'bg': '#0C0D0E',
+      'bg': '#121212',
       'dark-charcoal': '#101214',
       'super-dark-gray': '#1A1A1A',
       'dim-gray': '#555555',
       'light-gray': '#878787',
       'gray': '#D1D1D1',
-      'accent': '#F7F7F7',
+      'accent': '#F8F6E3',
       'text': '#CCCCCC',
       'primary': '#EFECE6',
       'outline': '#D1D1D1',
-      'gradient': '#D0C7B3',
-      'gradient2': '#968A73',
-      'gradient3': '#675E4C',
     },
     extend: {
       fontFamily: {

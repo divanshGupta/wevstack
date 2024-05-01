@@ -37,7 +37,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-32 mb-16 sm:mb-0">
+    <footer className="px-6 md:px-8 mt-32 mb-16 sm:mb-0">
       <div className="border-b border-b-dim-gray pb-6">
         <span className="sr-only">WEVSTACK</span>
       </div>
