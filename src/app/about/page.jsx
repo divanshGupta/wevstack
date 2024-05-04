@@ -18,8 +18,8 @@ export default function About() {
           </span>
 
           <span> 
-          Together, we&apos;ll turn caffeine into code and dreams into digital reality. 
-          Welcome to the party, fellow devs. Let&apos;s make some magic happen!
+          Together, we&#39;ll turn caffeine into code and dreams into digital reality. 
+          Welcome to the party, fellow devs. Let&#39;s make some magic happen!
           </span>
         </p>
         <div className="flex items-center gap-x-3">
