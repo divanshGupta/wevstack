@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
+import logo from "../../../public/big-wevstack.svg";
 
 export default function Footer() {
   const links = [
@@ -21,25 +22,15 @@ export default function Footer() {
     },
     {
       id: 4,
-      href: "",
-      label: "Support this project",
-    },
-    {
-      id: 5,
       href: "https://github.com/divanshGupta/wevstack",
       label: "Contribute on Github",
-    },
-    {
-      id: 6,
-      href: "/legal",
-      label: "Legal",
     },
   ];
 
   return (
-    <footer className="px-6 md:px-8 mt-32 mb-16 sm:mb-0">
-      <div className="border-b border-b-dim-gray pb-6">
-        <span className="sr-only">WEVSTACK</span>
+    <footer className=" px-6 md:px-8 mt-32 mb-16 sm:mb-0">
+      <div className="border-b border-b-dim-gray flex items-center justify-center p-6">
+        <Image src={logo} alt="WEVSTACK" className=""/>
       </div>
       <div className="flex flex-col gap-y-12 gap-x-2 md:flex-row items-start justify-between pt-6 pb-10 text-text">
         <div className="gap-y-4 b-8 flex flex-col text-base xl:text-h6 2xl:text-h5">
@@ -63,7 +54,7 @@ export default function Footer() {
           </div>
 
         </div>
-        <ul className=" grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid xl:grid-cols-3 gap-x-8 gap-y-3">
+        <ul className=" grid-cols-1 md:grid-cols-2 grid gap-x-8 gap-y-3">
           {links.map((link) => (
             <li
               key={link.id}
@@ -91,6 +82,8 @@ export default function Footer() {
           ))}
         </ul>
       </div>
+
+      
     </footer>
   );
 }

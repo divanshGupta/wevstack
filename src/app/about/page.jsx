@@ -1,5 +1,5 @@
-import profile from "../../../public/profile.jpg";
 import Image from "next/image";
+import profile from "../../../public/profile.jpg";
 import Clipboard from "../libs/Clipboard";
 
 export default function About() {
@@ -15,23 +15,23 @@ export default function About() {
           <span>
             I created this website as a Front End Project and to help myself and 
             other devs find web development resource organised at one place.
-            {" "}
           </span>
 
           <span> 
-          Together, we'll turn caffeine into code and dreams into digital reality. 
-          Welcome to the party, fellow devs. Let's make some magic happen!
+          Together, we&apos;ll turn caffeine into code and dreams into digital reality. 
+          Welcome to the party, fellow devs. Let&apos;s make some magic happen!
           </span>
         </p>
         <div className="flex items-center gap-x-3">
           <div className="w-10 h-10 rounded-full overflow-hidden">
-            <Image
-              className=" scale-150"
+          {/* <img className="w-full h-full" src={profile} alt="profile picture of Divyansh Gupta"></img> */}
+          <Image
+              className=" scale-300"
               placeholder="blur"
               src={profile}
               alt="profile photo of Divyansh Gupta"
             />
-          </div>
+            </div>
           <div className="text-primary text-base xl:text-h6 2xl:text-h5 font-medium flex flex-col">
             <p className=" leading-tight">Divyansh Gupta</p>
             <Clipboard />

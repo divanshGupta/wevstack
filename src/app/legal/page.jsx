@@ -22,7 +22,7 @@ export default function About() {
         <div className="flex items-center gap-x-3">
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <Image
-              className=" scale-150"
+              className=" scale-300"
               placeholder="blur"
               src={profile}
               alt="profile photo of Divyansh Gupta"

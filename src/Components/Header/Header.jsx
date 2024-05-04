@@ -10,10 +10,6 @@ export default function Header() {
           <h1 className='text-4xl md:hidden block font-extrabold'>W<span className='font-light'>S.</span></h1>
         </Link>
 
-        {/* <div>
-          <input type="input" />
-        </div> */}
-
         <div className="flex items-center gap-x-8">
           <Link className="font-medium hidden sm:block relative overflow-hidden group h-fit text-base xl:text-h6 2xl:text-h5" href="/about">
             <span className="flex group-hover:-translate-y-5 group-hover:opacity-0 transition-all ease-in-out-circ duration-500">About</span>

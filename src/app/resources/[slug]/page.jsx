@@ -1,5 +1,6 @@
 import Button from "@/Components/Buttons/Button";
 import Image from "next/image";
+
 import Link from "next/link";
 import { getContent } from "@/app/utils/getContent";
 import { GoArrowLeft } from "react-icons/go";
@@ -65,7 +66,15 @@ export default async function ResourceDetails({ params }) {
       <div className="flex flex-col md:flex-row mt-5 gap-x-10 lg:gap-x-16 justify-center items-center">
         <div className=" bg-super-dark-gray flex relative items-center justify-center md:pb-[25%] md:pt-[25%] pt-[50%] pb-[50%] rounded-2xl w-full md:w-1/2 border-4 border-outline border-opacity-15">
           <div className="absolute w-2/3 rounded-3xl overflow-hidden  shadow-shine bg-transparent bg-opacity-0 ">
-            <img className="w-full h-full" alt={resource.fields.title} src={resource.fields.thumbnail}></img>
+            <Image
+              priority={true}
+              alt={resource.fields.title}
+              src={"https://" + resource.fields.image.fields.file.url}
+              className="h-full w-full"
+              width={800}
+              height={800}
+            />
+            {/* <img className="w-full h-full" src={resource.fields.thumbnail} alt={resource.fields.title}></img> */}
           </div>
         </div>
         <div className="w-full mt-12 md:mt-0 md:w-1/2">
