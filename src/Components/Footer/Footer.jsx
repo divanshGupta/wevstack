@@ -42,7 +42,7 @@ export default function Footer() {
             <Link
               className="font-bold relative overflow-y-hidden w-full group"
               target="_blank"
-              href="https://instagram.com/divansgupta"
+              href="https://www.linkedin.com/in/divyansh-raj-gupta/"
             >
               <span className="flex group-hover:-translate-y-5 group-hover:opacity-0 transition-all ease-in-out-circ duration-500">
                 Divyansh
