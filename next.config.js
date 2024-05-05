@@ -1,16 +1,12 @@
 module.exports = {
     images: {
-      dangerouslyAllowSVG: true,
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'images.ctfassets.net',
-        },
-        {
-          protocol: 'https',
-          hostname: 'api.producthunt.com',
-        },
-      ],
-    },
+        domains: ["images.ctfassets.net"],
+        remotePatterns: [
+          {
+            protocol: "https",
+            hostname: "images.ctfassets.net",
+          },
+        ],
+      },
 
   }
