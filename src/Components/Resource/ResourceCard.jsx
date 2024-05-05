@@ -10,9 +10,9 @@ export default function ResourceCard({ resource }) {
   const tagNames = tags.map((tag) => tag.fields.tags);
   tagNames.sort()
 
-  const loaderProp =({ src }) => {
-    return src;
-}
+  const imageLoader = ({ src, width, quality }) => {
+    return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+  }
 
 
 
