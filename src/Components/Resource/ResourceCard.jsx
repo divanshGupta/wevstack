@@ -11,7 +11,7 @@ export default function ResourceCard({ resource }) {
   tagNames.sort()
 
   const imageLoader = ({ src, width, quality }) => {
-    return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+    return `https://${src}?w=${width}&q=${quality || 75}`
   }
 
 
@@ -21,7 +21,7 @@ export default function ResourceCard({ resource }) {
       <div className=" bg-super-dark-gray flex relative items-center justify-center pb-[50%] pt-[50%] rounded-b-2xl">
         <div className="absolute w-2/3 rounded-3xl overflow-hidden transition-all shadow-shine group-hover:shadow-bright bg-transparent bg-opacity-0 ">
           {/* <img className="h-full w-full" src={thumbnail} alt={title}></img> */}
-          <Image unoptimized={true} loading="lazy" 
+          <Image loading="lazy" 
           loader={loaderProp} className="w-full object-cover" 
           quality={100} width={200} height={200} alt={title} 
           src={"https://" + image.fields.file.url} />

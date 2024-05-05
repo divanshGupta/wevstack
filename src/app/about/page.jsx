@@ -4,7 +4,7 @@ import Clipboard from "../libs/Clipboard";
 
 export default function About() {
   return (
-    <div className="my-20 flex-col flex lg:grid lg:grid-cols-12">
+    <div className="px-6 md:px-12 my-20 flex-col flex lg:grid lg:grid-cols-12">
       <div className="text-display col-span-4">
         <h1 className="mb-8 lg:pl-8">
           About <span className="text-light-gray">WEVSTACK</span>
