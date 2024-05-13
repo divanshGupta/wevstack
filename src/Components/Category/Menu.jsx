@@ -33,7 +33,7 @@ export default function Menu({ categories }) {
       >
         All
       </button>
-      <div className="flex gap-x-2 bg-super-dark-gray">
+      <div className="flex gap-x-2 bg-transparent">
         {Object.entries(categoryCount).map(([item, count]) => {
           return (
             <button
@@ -42,7 +42,7 @@ export default function Menu({ categories }) {
                 e.preventDefault();
                 router.push(`/?category=${item}`, { scroll: false });
               }}
-              className={`py-2 px-5 flex gap-x-1 font-medium  rounded-full border border-dim-gray transition-all relative ${
+              className={`bg-super-dark-gray py-2 px-5 flex gap-x-1 font-medium  rounded-full border border-dim-gray transition-all relative ${
                 activeCategory === item
                   ? ""
                   : "   hover:text-gray"

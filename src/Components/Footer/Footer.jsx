@@ -28,7 +28,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className=" px-6 md:px-8 mt-32 mb-16 sm:mb-0">
+    <footer className=" px-6 md:px-8 mt-12 mb-16 sm:mb-0">
       <div className="border-b border-b-dim-gray flex items-center justify-center p-6">
         <Image src={logo} alt="WEVSTACK" className=""/>
       </div>
@@ -44,10 +44,10 @@ export default function Footer() {
               target="_blank"
               href="https://www.linkedin.com/in/divyansh-raj-gupta/"
             >
-              <span className="flex group-hover:-translate-y-5 group-hover:opacity-0 transition-all ease-in-out-circ duration-500">
+              <span className="flex group-hover:-translate-y-6 group-hover:opacity-0 transition-all ease-in-out-circ duration-500">
                 Divyansh
               </span>
-              <span className="absolute inset-0 group-hover:translate-y-0 translate-y-5 xl:translate-y-8 transition-all ease-in-out-circ duration-500 underline flex-nowrap whitespace-nowrap">
+              <span className="absolute inset-0 group-hover:translate-y-0 translate-y-6 xl:translate-y-8 transition-all ease-in-out-circ duration-500 underline flex-nowrap whitespace-nowrap">
                 Divyansh :)
               </span>
             </Link>

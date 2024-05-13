@@ -1,6 +1,5 @@
 import Button from "@/Components/Buttons/Button";
 import Image from "next/image";
-
 import Link from "next/link";
 import { getContent } from "@/app/utils/getContent";
 import { GoArrowLeft } from "react-icons/go";
@@ -68,6 +67,8 @@ export default async function ResourceDetails({ params }) {
           <div className="absolute w-2/3 rounded-3xl overflow-hidden  shadow-shine bg-transparent bg-opacity-0 ">
             <Image
               priority={true}
+              //to solve image error on hosting i'm implementing unoptimized but its not a way to go
+              unoptimized={true}
               alt={resource.fields.title}
               src={"https://" + resource.fields.image.fields.file.url}
               className="h-full w-full"

@@ -17,7 +17,12 @@ export default async function Home({ searchParams }) {
   return (
     <main className="bg-[222831]">
       <section className="px-6 md:px-12 mx-auto flex flex-col items-center space-y-5 mt-10 mb-24">
-        <h1 className="leading-snug text-display max-w-[20ch] text-center text-[EEEEEE]">
+          {/* <div className=" rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px]">
+            <div className="flex bg-slate-200 h-full w-full items-center justify-center bg-[#1e1e1e] back rounded-md p-2">
+              <h1 className="text-xs text-white">Updated Weekly</h1>
+            </div>
+          </div> */}
+          <h1 className="leading-snug text-display max-w-[20ch] text-center text-[EEEEEE]">
           Resources You Need {" "}
             For Your
             <span className=" text-light-gray"> Development And Design Project.
