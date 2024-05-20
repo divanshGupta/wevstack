@@ -44,7 +44,7 @@ export default function MobileMenu({ categories }) {
         border-dim-gray bg-dark-charcoal p-4 m-4 flex rounded-xl flex-col gap-y-2 ">
           <button
             onClick={() => handleCategoryChange("")}
-            className={`rounded-xl py-4 px-4 flex items-center justify-center gap-x-1 font-medium border border-transparent hover:border-dim-gray transition-all text-sm ${
+            className={`rounded-xl py-4 px-4 gap-x-1 font-medium border border-transparent hover:border-dim-gray transition-all text-sm ${
               activeCategory === "" ? "bg-accent text-bg" : " bg-bg text-accent"
             }`}
           >

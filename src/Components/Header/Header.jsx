@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="border-b-2 border-b-dim-gray border-opacity-30">
-      <nav className="px-6 sm:px-10 md:px-10 pt-1 py-4 xl:py-6 2xl:pb-6 border-opacity-20 mt-2 xl:mt-6 2xl:mt-8  flex items-center justify-between text-accent">
+      <nav className="px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16 py-4 xl:py-6 2xl:py-8 border-opacity-20 flex items-center justify-between text-accent">
         <Link aria-label='Back To Home' href='/'>
           <h1 className='font-extrabold hidden md:block md:text-h2'>WEVSTACK</h1>
           <h1 className='text-4xl md:hidden block font-extrabold'>W<span className='font-light'>S.</span></h1>
