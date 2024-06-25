@@ -15,7 +15,7 @@ export default function ResourceCard({ resource }) {
       <div className=" bg-super-dark-gray flex relative items-center justify-center pb-[50%] pt-[50%] rounded-b-2xl">
         <div className="absolute w-2/3 rounded-3xl overflow-hidden transition-all shadow-shine group-hover:shadow-bright bg-transparent bg-opacity-0 ">
           {/* <img className="h-full w-full" src={thumbnail} alt={title}></img> */}
-          <Image loading="lazy" className="w-full object-cover" quality={80} width={200} height={200} alt={title} src={"https://" + image.fields.file.url} />
+          <Image unoptimized={true} loading="lazy" className="w-full object-cover" quality={80} width={200} height={200} alt={title} src={"https://" + image.fields.file.url} />
         </div>
         <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity bg-dim-gray bg-opacity-25 p-3 rounded-xl backdrop-blur-2xl">
           <GoArrowUpRight size={32} className=" fill-gray" />
